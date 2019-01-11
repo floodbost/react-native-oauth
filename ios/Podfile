@@ -1,0 +1,3 @@
+target 'MyAuthApp' do
+  pod 'AppAuth', '>= 0.94'
+end
