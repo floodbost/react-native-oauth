@@ -38,7 +38,7 @@ export default class App extends Component {
 					  tokenEndpoint: ``
 					},
 					clientId: '392709821576081',
-					redirectUrl: 'com.myauthapp:/oauth',
+					redirectUrl: 'com.myauthapp:/oauth', 
 					scopes: ['email']
 				};
 			break;
@@ -55,9 +55,7 @@ export default class App extends Component {
 		.then(res => res.json())
 		.then((response) => {
 			console.log('response', response);
-			revoke(config, {
-			  tokenToRevoke: authState.accessToken
-			});
+			
 			this.setState({result: response});
 		});
 
